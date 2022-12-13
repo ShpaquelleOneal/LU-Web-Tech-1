@@ -47,7 +47,11 @@ window.onload = function () {
 	// ---------------------------------- word translation functionality ----------------------------------
 	
 	function translate(word) { // this function must translate a word in English into Latvian
-
+		if(my_dict[word]) {
+			return my_dict[word];
+		} else {
+			return word;
+		}
 	}
 	
 	function showTranslation() { // this function is executed when a user chooses a word from the drop-down list
@@ -66,7 +70,13 @@ window.onload = function () {
 	
 	function translateText(text) { // this function must translate a text in English into Latvian 
 		// split the text into words, translate each word ignoring case, leave words without translations available in my_dict.
+		let textarr = text.split(" ");
+		let newarr = [];
 		
+		for (word in textarr) {
+			newarr.push(translate(textarr[word].toLowerCase()));
+		}
+		return newarr.join(" ");
 	}
 	
 	function showTextTranslation() { // this function is executed when a user presses a button Translate
