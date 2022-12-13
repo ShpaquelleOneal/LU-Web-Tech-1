@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+Enter your name, surname and student id number here
+-->
+<html>
+    <head>
+        <title>PD3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body { margin-left: 60px; margin-right: 60px; width: 65%; min-width: 550px}
+            h1 {text-align: center;}
+            table, td, th { border: 1px solid gray; border-collapse: collapse;}
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript - Practical Assignments</h1>
+
+        <h2>Task #1 - Sort function</h2>
+		<p>Write a JavaScript function <code>compare</code> to be used as a parameter for the Array sort method. 
+		The array to be sorted contains a collection of objects that have id and name properties. After the execution of the sort method with <code>compare</code> as a parameter, the items in the array must be sorted according to the id property in ascending order. 
+		ids must be sorted as numbers, not strings. </p>
+		<p>For example, if the following code snippet is executed, </p>
+		<pre>
+let arr = [ {id : "4", name : "Joe"}, {id : "1", name : "Mary"}, {id : "100", name : "Jane"} ];
+arr.sort(compare);</pre>
+		
+		
+		<p>the array will be sorted as follows: <code>[ {id : "1", name : "Mary"}, {id : "4", name : "Joe"}, {id : "100", name : "Jane"} ]</code></p>
+		
+		<p>The compare function has the following form: </p>
+<pre>function compare(a, b) {
+  if (a is less than b by some ordering criterion) {
+    return -1;
+  }
+  if (a is greater than b by the ordering criterion) {
+    return 1;
+  }
+  // a must be equal to b
+  return 0;
+}</pre>
+
+        <h2>Task #2 - Dictionary</h2>
+
+        <p>Use the "my_dict" object (loaded from <a href="dictionary.js">dictionary.js</a>) to implement a simple dictionary on this page.</p>
+        <p>Note: you may modify dictionary.js if you wish.</p>
+
+        <h3>1) Word lookup</h3>
+
+        <ul>
+        <li>When the user chooses a word from the dropdown list, display the Latvian translation of this word (as a part of the webpage). Technically </li>
+        <li>Technically this means you must implement the function <code>translate</code> already declared in <a href="pd3.js">pd3.js</a>. 
+		This function is already launched automatically from the function <code>showTranslation</code> which gets the selected word and would output the translation.</li>
+        </ul>
+
+        <div>
+          <div>
+            <label for="word-select">English word:</label>
+            <select id="word-select"></select>
+          </div>
+          <div>
+            <p id="word-output"></p>
+          </div>
+        </div>
+
+        <h3>2) Translation tool</h3>
+
+        <ul>
+        <li>There is a text input field and a "Translate" button below.</li>
+        <li>When a user presses "Translate", translate contents of the input field by replacing English words in the dictionary with their Latvian translations. Display the translation below the input field.</li>
+            <li style="list-style-type: none;"><ul>
+                <li>Word replacement should be case insensitive (e.g. both "Dog" and "dog" should be translated)</li>
+                <li>Unrecognized word should remain unchanged</li>
+            </ul></li>
+			<li>Technically this means you must implement the function <code>translateText</code> already declared in <a href="pd3.js">pd3.js</a>. 
+			This function is already launched automatically from the function <code>showTextTranslation</code> which gets the text entered by the user and would output the translation.</li>			
+        </ul>
+
+        <div id="translation-app">
+			<div>
+				<textarea id="text-input" rows="4" cols="50"></textarea> 
+			</div>
+			<button id="translate-button">Translate</button>
+			<div>
+				<p id="text-output"></p>
+			</div>
+        </div>
+
+        <h4>Example:</h4>
+        <p>If the original dictionary.js is used, the text "Elephant is happy" should be translated to "zilonis ir laimīgs". :-D</p>
+
+        <!-- DO NOT modify the code below this line -->
+        <script src="dictionary.js"></script>
+        <script src="pd3.js"></script>
+
+    </body>
+</html>

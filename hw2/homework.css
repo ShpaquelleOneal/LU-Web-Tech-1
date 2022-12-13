@@ -1,0 +1,427 @@
+/*Info about the author 
+Name, surname: <Edgars Spira>
+Student ID number: <es22027>
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&family=Russo+One&display=swap');
+
+/*-----general-----*/
+html {
+	min-width: 534px;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(255,255,255,0.6);
+	
+	margin: 0 10.5%;
+	position: relative;
+	
+	background-color: black;
+	background-image: url("images/background.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position-y: -3.3em;
+}
+
+h1, h2, h3, h4, h5, h6, .slogan, .img-text {
+	font-family: 'Russo One', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(255,255,255,0.7);
+}
+
+article {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+article, footer {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*-----top-banner-----*/
+.top_banner {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	
+	background-color: black;
+	background-image: url("images/intro-img-812gts.jfif");
+	background-position: 50% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.img-logo {
+	position: absolute;
+	left: 0.5%;
+	top: 1%;
+}
+
+.img-logo img {
+	width: 80%;
+}
+
+.slogan {
+	color: rgba(0,0,0,0.6);
+	font-size: 32px;
+	text-align: center;
+	text-shadow: 2px 2px 5px rgb(0,0,0,0.6);
+	text-transform: uppercase;
+	
+	position: absolute;
+	bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*-----top-sticky-menu-----*/
+#main-menu {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+	
+	z-index: 10;
+	
+	background-color: black;
+}
+
+.parent-menu {
+	position: relative;
+}
+
+.parent-menu::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.sub-menu-caption, .upper-menu {
+	float: left;
+	padding: 10px;
+	
+	color: rgba(255,255,255,0.7);
+	font-size: 12px;
+	
+	text-align: center;
+	text-transform: uppercase;
+	
+	border-left: 1px solid rgba(255,0,0,0.5);
+}
+
+.upper-menu a:hover, .sub-menu a:hover {
+	text-decoration: underline;
+}
+
+.sub-menu a:hover {
+	color: red;
+}
+
+.right-menu {
+	float: right;
+	background-color: rgba(255,0,0,0.5);
+	border: none;
+}
+
+.sub-menu li {
+	border: 1px solid rgba(255,0,0,0.5);
+	padding: 6px;
+	
+	font-style: italic;
+	text-align: left;
+}
+
+.sub-menu {
+	position: absolute;
+	left: 0px;
+	top: 30px;
+	
+	display: none;
+	
+	background-color: black;
+}
+
+.sub-menu li:first-child {
+	border-top: none;
+}
+
+.sub-menu-caption {
+	color: red;
+}
+
+.parent-menu li:nth-child(5) {
+	border-right: 1px solid rgba(255,0,0,0.5);
+}
+
+.sub-menu-caption:hover .sub-menu {
+	display: block;
+}
+
+/*-----main-container-----*/
+.main-container {
+	clear: left;
+	padding-top: 2%;
+	text-align: justify;
+}
+
+.main-container p {
+	padding-top: 1%;
+	line-height: 1.5em;
+	font-size: 11px;
+}
+
+.main-container .lead {
+	color: white;
+	font-size: 12px;
+	letter-spacing: 0.07px;
+}
+
+.main-container h1 {
+	font-size: 20px;
+	color: white;
+	font-variant: small-caps;
+}
+
+.title-red {
+	color: red;
+}
+
+.main-container h2 {
+	color: white;
+	padding-top: 1%;
+	clear: left;
+}
+
+.main-container h2:first-of-type {
+	margin: 0.5% 0 1% 0;
+}
+
+.main-container h2:nth-of-type(2) {
+	padding-top: 0;
+}
+
+
+.main-container h3 {
+	font-size: 14px;
+	color: white;
+}
+
+/*-----fuel-consumption-----*/
+.column-1 {
+	float: left;
+	margin: 0% 12% 0 0;
+}
+
+.column-1 h3 {
+	color: rgba(255,255,255,0.6);
+}
+
+.column-1 p {
+	margin: 5% 0 5% 0;
+	text-transform: uppercase;
+}
+
+#fuel-consumption-add {
+	position:relative;
+	padding-top: 8%;
+}
+
+#fuel-consumption-add p {
+	font-size: 9px;
+	margin-bottom: -4px;
+}
+
+#fuel-consumption-add p:last-of-type {
+	margin: 8px 0 0 0;
+	padding-bottom: 0;
+}
+
+/*-----design-----*/
+
+#interior-img {
+	float: left;
+	width: 20%;
+	margin: 8px 8px 0 0;
+}
+
+.main-container h3:nth-of-type(1), .main-container h3:nth-of-type(2), .main-container h3:nth-of-type(3) {
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+
+#image-right {
+	position: relative;
+	z-index: 1;
+}
+
+#image-right img {
+	width: 50%;
+	min-width: 480px;
+	float: right;
+	margin: 1.5% 0 0 10px;
+}
+
+#image-right .img-text {
+	position: absolute;
+	left: 51%;
+	
+	font-size: 22px;
+	color: red;
+	text-shadow: 1px 1px 5px black;
+	text-transform: uppercase;
+	
+	margin: 2% 5% 0 0;
+}
+
+.dynamics-list li {
+	font-size: 11px;
+	line-height: 1.5em;
+	
+	list-style-type: circle;
+	list-style-position: inside;
+	
+	margin: 0.8% 0 0.5% 0;
+}
+
+.main-container p:last-of-type {
+	padding: 0 0 2% 0;
+}
+
+/*-----spec-container-----*/
+.spec-container {
+	border-top: 1px solid rgba(255,0,0,0.5);
+	border-bottom: 1px solid rgba(255,0,0,0.5);
+	
+	padding: 3% 8.5% 2% 8.5%;
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "left right"
+    "footer footer";
+	grid-template-columns: 45% 47.5%;
+	justify-content: space-between;
+}
+
+.spec-container h2 {
+	grid-area: header;
+}
+
+.spec-container .specs:first-of-type {
+	grid-area: left;
+}
+
+.spec-container .specs:nth-of-type(2) {
+	grid-area: right;
+}
+.specs:not(.bottom) dl {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.spec-container .bottom {
+	grid-area: footer;
+}
+
+.spec-container h2 {
+	color: white;
+	margin-bottom: 3%;
+
+}
+
+.spec-container h3 {
+	font-size: 12px;
+	color: white;
+	margin: 8px 0 8px 0;
+}
+
+
+.spec-container dt {
+	font-size: 10px;
+	margin-bottom: 8px;
+
+}
+
+.spec-container dd {
+	font-size: 10px;
+	margin-bottom: 8px;
+}
+
+.bottom h3 {
+	margin-top: 3%;
+}
+
+.bottom dt, .bottom dd {
+	float: left;
+}
+.bottom dt:last-of-type {
+	clear:left;
+}
+
+/*-----footer-----*/
+footer {
+	clear:left;
+}
+
+.menu-bottom, #copyright {
+	text-align: center;
+}
+
+.menu-bottom li {
+	display: inline-block;
+	padding: 3px 6px 3px 3px;
+	margin: 7px 0px 7px 0px;
+	
+	font-size: 11px;
+	font-variant: small-caps;
+	
+	border-right: 1px solid rgba(255,0,0,0.5);
+}
+
+.menu-bottom li:nth-child(5) {
+	border-right: none;
+}
+
+.menu-bottom li:first-letter {
+	text-transform: uppercase;
+}
+
+.menu-bottom li a:first-letter {
+	text-transform: capitalize;
+}
+
+.menu-bottom a {
+	color: rgba(255,0,0,0.5);
+}
+
+.menu-bottom a:hover {
+	text-decoration: underline;
+}
+
+#copyright {
+	color: rgba(255,0,0,0.5);
+	font-size: 8px;
+}
+
+/*-----fixed-logo-----*/
+#logo {
+	position: fixed;
+	right: -10px;
+	bottom: 0px;
+}
+
+#logo img {
+	width: 75%;
+	border: 2px solid rgba(0,0,0,0);
+	border-radius: 5px;
+}
+
+#logo img:hover {
+	border: 2px solid rgba(255,0,0,0.5);
+	border-radius: 5px;
+}

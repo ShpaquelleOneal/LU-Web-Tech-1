@@ -1,0 +1,176 @@
+/*Info about the author 
+Name, surname: <Edgars Spira>
+Student ID number: <es22027>
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&family=Russo+One&display=swap');
+html {
+	margin: 0;
+	padding: 0;
+	min-width: 534px;
+	
+	background-image: url("images/background.jpg");
+	background-color: black;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+	
+	margin: 0 10.5%;
+	position: relative;
+	
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.img-logo {
+	position: absolute;
+	top: 1%;
+	left: 1%;
+}
+
+.img-logo img {
+	width: 80%;
+}
+.top_banner {
+	background-image: url("images/intro-img-812gts.jfif");
+	background-position: 50% 0;
+	background-size: cover;
+	background-color: black;
+	background-repeat: no-repeat;
+	
+	position: relative;
+	height: 100vh;
+}
+
+
+.slogan {
+	color: rgba(0,0,0,0.6);
+	font-size: 32px;
+	text-align: center;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+	text-transform: uppercase;
+	
+	position: absolute;
+	top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+#main-menu {
+	position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+.parent-menu {
+	background-color: black;
+	padding: 10px;
+	
+	font-size: 12px;
+	text-transform: uppercase;
+
+	border-left: 1px;
+	border-right: 1px;
+	border-style:solid;
+	border-color: rgba(255,0,0,0.5);
+}
+
+.parent-menu .right-menu {
+	float: right;
+	background-color: rgba(255,0,0,0.5);
+	border: 0px;
+}
+
+.sub-menu {
+	background-color: black;
+	position: absolute;
+	top: 100%;
+
+}
+
+.sub-menu-caption {
+  color: red;
+}
+
+.main-container {
+	clear: left;
+	font-size: 12px;
+	line-height: 1.6em;
+	color: rgba(255,255,255,0.7);
+
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.title-red {
+  color:red;
+}
+
+.slogan, .img-text, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Russo One', sans-serif;
+	color: rgba(255,255,255,1);
+	font-size: 16px;
+}
+
+.para-head {
+	color: rgba(255,255,255,0.7);
+}
+
+.column-1 h3 {
+	display: inline-block;
+	float: left;
+}
+
+#image-right {
+	float: right;
+
+}
+
+#image-right img {
+	width: 50%;
+	min-width: 534px;
+}
+
+.img-text {
+	position: absolute;
+	color: red;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
+}
+
+.specs {
+  border: 1px;
+  border-color: red;
+}
+
+.menu-bottom {
+  color: red;
+}
+
+#interior-img {
+	float: left;
+	width: 200px;
+	margin-right: 1%;
+}
+
+.lead {
+	color: white;
+}
+
+#logo {
+	position: fixed;
+	bottom: 0%;
+	right: -0.5%;
+}
+
+#logo img {
+	width: 80%;
+}
